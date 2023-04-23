@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+![Flashcards-for-language-learning-blog](https://user-images.githubusercontent.com/26481284/233814294-a45cb38a-7d14-4802-81ff-cea5772a4ff7.jpg)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
