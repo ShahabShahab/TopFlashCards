@@ -1,35 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:topflashcards/custom_widgets/custom_list_card.dart';
+import 'package:topflashcards/custom_widgets/custom_card_view.dart';
 import 'package:topflashcards/custom_widgets/custom_text.dart';
+import 'package:topflashcards/custom_widgets/flash_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    debugPrint(MediaQuery.of(context).size.width.toString());
+    debugPrint(MediaQuery.of(context).size.height.toString());
     return Scaffold(
         appBar: AppBar(),
         body: GridView(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2),
-          children: [
-            CustomListCard(
-              child: FlashCardText("shahab"),
-            ),
-            CustomListCard(
-              child: FlashCardText("data"),
-            ),
-            CustomListCard(
-              child: FlashCardText("data"),
-            ),
-            CustomListCard(
-              child: FlashCardText("data"),
-            ),
-            CustomListCard(
-              child: FlashCardText("data"),
-            ),
+          children: const [
+            CustomCardView(child: FlashCard(text: "shahab")),
+            CustomCardView(child: FlashCard(text: "shahab")),
+            CustomCardView(child: FlashCard(text: "shahab")),
+            CustomCardView(child: FlashCard(text: "shahab")),
+            CustomCardView(child: FlashCard(text: "shahab")),
           ],
         ));
   }
